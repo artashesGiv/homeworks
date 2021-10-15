@@ -1,0 +1,54 @@
+
+
+.message {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*.message * {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.message img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.content {
+    position: relative;
+    border-radius: 8px 8px 8px 0;
+    background-color: #a3a3a3;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.svg {
+    overflow: hidden;
+    position: absolute;
+    bottom: -0.0625rem;
+    height: 1.125rem;
+    left: -9px;
+}
+
+.name {
+    font-size: 18px;
+    color: blueviolet;
+}
+
+.name p,
+.messageValue .text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.messageValue .text {
+    font-size: 15px;
+}
+
+.time {
+    font-size: 10px;
+    text-align: right;
+    color: aquamarine;
+}
+
