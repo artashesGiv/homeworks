@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './Message.module.css'
+import s from './Message.module.scss'
 
 type MessagePropsType = {
    avatar: string
@@ -24,7 +24,7 @@ function Message(props: MessagePropsType) {
                   <svg width="9" height="20">
                         <path
                            d="M3 17h6V0c-.193 2.84-.876 5.767-2.05 8.782-.904 2.325-2.446 4.485-4.625 6.48A1 1 0 003 17z"
-                           fill="#a3a3a3"/>
+                           />
                   </svg>
                </div>
                <p className={s.text}>
