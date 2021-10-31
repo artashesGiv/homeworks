@@ -1,24 +1,24 @@
 .someClass {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-
+   display: flex;
+   justify-content: space-between;
+   width: 300px;
+   margin-top: 10px;
 }
 
 .error {
-    border: 2px solid red;
-    outline: red;
+   border: 2px solid red;
+   outline: red;
 }
 
 .notError {
-    border: 2px solid #b0c4de;
-    outline: cadetblue;
+   border: 2px solid #b0c4de;
+   outline: cadetblue;
 }
 
 .button {
-    background-color: #b0c4de;
-    border: none;
-    color: #282c34;
-    width: 60px;
-    height: 20px;
+   background-color: #b0c4de;
+   border: none;
+   color: #282c34;
+   width: 60px;
+   height: 20px;
 }
