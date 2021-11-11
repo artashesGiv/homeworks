@@ -27,7 +27,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
          setName('')
          setError('')
       } else {
-         setError('Error')
+         setError('error')
       }
    }
 
@@ -35,7 +35,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
    return (
       <Greeting
-         name={name}
+         text={name}
          setNameCallback={setNameCallback}
          onKeyPressInput={onKeyPressInput}
          addUser={addUser}

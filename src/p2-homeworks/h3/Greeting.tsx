@@ -1,8 +1,10 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.scss'
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type GreetingPropsType = {
-   name: string
+   text: string
    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
    onKeyPressInput: (e: KeyboardEvent<HTMLInputElement>) => void
    addUser: () => void
@@ -12,15 +14,14 @@ type GreetingPropsType = {
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-   {name, setNameCallback, addUser, error, totalUsers, onKeyPressInput} // деструктуризация пропсов
+   {text, setNameCallback, addUser, error, totalUsers, onKeyPressInput} // деструктуризация пропсов
 ) => {
-   const inputClass = error === 'Error' ? s.error : s.notError
+   const inputClass = `${error && s.error} ${s.default}`
 
    return (
       <div className={s.someClass}>
-         <input value={name} onChange={setNameCallback} className={inputClass} onKeyPress={onKeyPressInput}/>
-         <span>{error}</span>
-         <button onClick={addUser} className={s.button}>Add</button>
+         <SuperInputText value={text} onChange={setNameCallback} className={inputClass} onKeyPress={onKeyPressInput} error={error}/>
+         <SuperButton onClick={addUser}>Add</SuperButton>
          <span>{totalUsers}</span>
       </div>
    )
