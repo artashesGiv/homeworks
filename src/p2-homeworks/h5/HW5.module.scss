@@ -1,0 +1,40 @@
+.navigation {
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   position: relative;
+   left: -230px;
+   width: 260px;
+   margin-top: 5px;
+   transition: left .2s linear;
+   border: 1px solid brown;
+   border-radius: 3px;
+   padding: 5px;
+
+   .arrow {
+      font-weight: bold;
+      line-height: 16px;
+      font-size: 16px;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+
+   a {
+      text-decoration: none;
+      color: #282c34;
+      line-height: 16px;
+      font-size: 16px;
+   }
+
+   .active {
+      color: brown;
+      font-weight: bold;
+      text-decoration: underline;
+   }
+}
+
+.navVisible {
+   left: 0;
+}

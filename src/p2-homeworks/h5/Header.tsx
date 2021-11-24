@@ -1,12 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {NavLink} from 'react-router-dom'
+import {PATH} from './Content'
+import s from './HW5.module.scss'
 
-function Header() {
-    return (
-        <div>
-            // add NavLinks
+export const Header = () => {
 
-        </div>
-    )
+   const [navHidden, setNavHidden] = useState(true)
+   const navClass = navHidden ? s.navigation : `${s.navigation} ${s.navVisible}`
+   const arrowContent = navHidden ? '--->' : '<---'
+
+   // актиынй класс ссылкам
+   const setActive = (props: { isActive: boolean }) => props.isActive ? s.active : ''
+
+   return (
+      <nav className={navClass}>
+         <NavLink className={setActive} to={PATH.PRE_JUNIOR}>preJunior</NavLink>
+         <NavLink className={setActive} to={PATH.JUNIOR}>Junior</NavLink>
+         <NavLink className={setActive} to={PATH.JUNIOR_PLUS}>Junior+</NavLink>
+         <div className={s.arrow} onClick={() => setNavHidden(!navHidden)}>
+            {arrowContent}
+         </div>
+      </nav>
+   )
 }
 
-export default Header
