@@ -1,0 +1,13 @@
+.wrapper {
+   max-width: 250px;
+   .btnGroup {
+      button {
+         width: 70px;
+         height: 25px;
+      }
+   }
+}
+.tableItem, .btnGroup {
+   display: flex;
+   justify-content: space-between;
+}
