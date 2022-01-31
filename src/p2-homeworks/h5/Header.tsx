@@ -9,7 +9,7 @@ export const Header = () => {
    const navClass = navHidden ? s.navigation : `${s.navigation} ${s.navVisible}`
    const arrowContent = navHidden ? '--->' : '<---'
 
-   // актиынй класс ссылкам
+   // активный класс ссылкам
    const setActive = (props: { isActive: boolean }) => props.isActive ? s.active : ''
 
    return (
