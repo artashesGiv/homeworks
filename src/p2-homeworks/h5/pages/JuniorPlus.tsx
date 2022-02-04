@@ -1,7 +1,9 @@
+import {HW12} from '../../h12/HW12'
+
 export const JuniorPlus = () => {
    return (
       <div>
-         junior+
+         <HW12/>
       </div>
    )
 }
