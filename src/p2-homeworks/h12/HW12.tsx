@@ -21,7 +21,7 @@ export const HW12 = () => {
          <hr/>
          <span className={s[theme + '-text']}>
                 homeworks 12
-            </span>
+         </span>
 
 
          <SuperSelect

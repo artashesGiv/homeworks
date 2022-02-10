@@ -10,3 +10,7 @@
 .red {
     background: red;
 }
+
+.disabled {
+    background-color: rgba(176, 196, 222, 0.5);
+}
